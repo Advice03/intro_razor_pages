@@ -1,0 +1,21 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+
+<!-- ask for account number-->
+    <input type="number" name="acc_no" placeholder="enter your account number" />
+
+
+    <br/>
+
+    <button> submit acc no </button>
+
+        <br />
+
+        <p style="color:blue"> @Model.message</p>
+
+</form>
